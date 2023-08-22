@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite"><test verbose="2" preserve-order="true" name="/home/maheshk/Downloads/Practice/Selenium">
+    <classes>
+        <class name="TestCases.AddressPageTest">
+            <methods>
+                <include name="addAddressAndValidate"/>
+            </methods>
+        </class>
+        <class name="TestCases.DealsPageTest">
+            <methods>
+                <include name="verifyTitle"/>
+                <include name="addProductToCartAndValidate"/>
+                <include name="searchForMobilesAndPrintOutputInConsole"/>
+                <include name="navigateBackHomePageAfterSelectingMobiles"/>
+            </methods>
+        </class>
+        <class name="TestCases.HomePageTest">
+            <methods>
+                <include name="verifyHomePageTitleTest"/>
+                <include name="navigateToDealsPageTest"/>
+                <include name="clickOnOrdersLink"/>
+            </methods>
+        </class>
+        <class name="TestCases.LoginPageTest">
+            <methods>
+                <include name="signIn"/>
+            </methods>
+        </class>
+        <class name="TestCases.OrdersPageTest">
+            <methods>
+                <include name="verifyOrdersPageLabel"/>
+                <include name="getOrderDetailsAndValidate"/>
+                <include name="getLastYearOrderDetailsAndValidate"/>
+            </methods>
+        </class>
+        <class name="TestCases.PaymentOptionsPageTest">
+            <methods>
+                <include name="addNewPaymentOptionAndValidate"/>
+            </methods>
+        </class>
+        <class name="TestCases.WithLoginTests">
+            <methods>
+                <include name="signIn"/>
+                <include name="addAddressAndValidate"/>
+                <include name="addNewPaymentOptionAndValidate"/>
+                <include name="verifyOrdersPageLabel"/>
+                <include name="getOrderDetailsAndValidate"/>
+                <include name="getLastYearOrderDetailsAndValidate"/>
+            </methods>
+        </class>
+        <class name="TestCases.WithOutLoginTests">
+            <methods>
+                <include name="verifyHomePageTitleTest"/>
+                <include name="verifyTitle"/>
+                <include name="addProductToCartAndValidate"/>
+                <include name="searchForMobilesAndPrintOutputInConsole"/>
+                <include name="navigateBackHomePageAfterSelectingMobiles"/>
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>
